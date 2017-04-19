@@ -1,0 +1,58 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="#">NetFlix</a>
+
+    </div>
+
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a routerLink="/watchlist/{{userId}}">Watchlist</a></li>
+        <li><a href="#about" routerLink="/about">About</a></li>
+      </ul>
+      <div class="side-bar col-md-4">
+
+        <div class="dropdown col-md-2">
+          <input type="text" name="searchQuery" [(ngModel)]="searchQuery" (keyup)="search()"
+                 class="form-control search-bar" placeholder="Search for Movie"/>
+          <div class="dropdown-content search-result col-md-4" *ngIf="searchResult">
+
+            <div *ngFor="let result of searchResult">
+              <a routerLink="/movie-detail/{{result.id}}">{{result.original_title}}</a>
+            </div>
+
+          </div>
+        </div>
+        <button class="form-control sign-in col-md-2" (click)="login()" *ngIf="authenticated === false"
+                style="float:right;">Sign In
+        </button>
+
+        <div class="dropdown" *ngIf="authenticated" style="float:right;">
+          <img class="user-image-thumbnail dropbtn" src="{{user.google.photoURL}}"/>
+          <div class="dropdown-content col-md-6"><br/>
+            <img class="bigger-thumbnail dropbtn col-md-3" src="{{user.google.photoURL}}"/>
+            <h4>{{user.google.displayName}}</h4>
+            <h6>{{user.google.email}}</h6>
+            <button class="form-control sign-in  col-md-2" (click)="logout()" *ngIf="authenticated === true">Logout
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div><!--/.nav-collapse -->
+
+
+  </div>
+</nav>

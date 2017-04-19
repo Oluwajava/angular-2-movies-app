@@ -1,0 +1,15 @@
+<div *ngFor="let movie of response">
+    <div class="row col-md-2">
+        <div class="search-res"  routerLink="/movie-detail/{{movie.id}}">
+            <img src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}" width="100%"/>
+            <h5>{{movie.original_title}}</h5>
+        </div>
+    </div>
+</div>
+<div style="clear: both"></div>
+<ul class="pagination">
+    <li *ngFor="">
+
+    </li>
+    
+</ul>

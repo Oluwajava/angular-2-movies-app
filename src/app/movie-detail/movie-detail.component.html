@@ -1,0 +1,48 @@
+
+<div class="container" *ngIf="movie && movie.original_title">
+    <div class="col-md-12">
+        <div class="col-md-4">
+            <img src="http://image.tmdb.org/t/p/w342/{{movie.poster_path}}" class="movie-detail-image"/>
+        </div>
+        <div class="col-md-6">
+            <h1 class="row">
+                {{movie.original_title}}
+            </h1>
+            <h4 class="row subtitle">
+                {{movie.overview}}
+            </h4>
+            <h4 class="row subtitle">
+              Rating: {{movie.vote_average}}/10
+            </h4>
+            <h4 class="row subtitle">
+                Release Date: {{movie.release_date}}
+            </h4>
+            <h4 class="row subtitle">
+                <label>Genere: </label>
+                <label *ngIf="movie.genres[0]">{{movie.genres[0].name}}</label>
+                <label *ngIf="movie.genres[1]">, {{movie.genres[1].name}}</label>
+                <label *ngIf="movie.genres[2]">, {{movie.genres[2].name}}</label>
+            </h4>
+
+            <div class="button-section col-md-12">
+                <button class="btn-watchlist col-md-4">Add to Watchlist</button>
+                <button class="btn-thriller col-md-4" routerLink="/thriller/{{youtubeLink}}">Watch Thriller</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+      <div class="col-md-12"><br/><br/>
+        <h4>Similar Movies</h4>
+        <div class="col-md-2 recommended-movies" *ngFor="let movie of recommendedMovies"   routerLink="/movie-detail/{{movie.id}}">
+          <img src="http://image.tmdb.org/t/p/w342/{{movie.poster_path}}" class="similar-movie-image"/>
+          <h5>{{movie.original_title}}</h5>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>

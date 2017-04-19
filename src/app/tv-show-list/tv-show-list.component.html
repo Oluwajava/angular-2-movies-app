@@ -1,0 +1,8 @@
+<div *ngFor="let movie of response">
+    <div class="row col-md-2">
+        <div class="search-res"  routerLink="/tvshow-detail/{{movie.id}}">
+            <img src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}" width="100%"/>
+            <h5>{{movie.original_name}}</h5>
+        </div><br/><br/>
+    </div>
+</div>

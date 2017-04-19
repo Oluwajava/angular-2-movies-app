@@ -1,0 +1,209 @@
+/* You can add global styles to this file, and also import other style files */
+
+li > a {
+    cursor: pointer;
+}
+
+.box {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.artist-header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #333;
+}
+
+.artist-thumb {
+    width: 80px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.artist-albums .well {
+    margin-bottom: 20px;
+    overflow: auto;
+    min-height: 400px;
+}
+
+.album {
+    text-align: center;
+    background: #333;
+    padding: 10px 20px;
+    border: #666 1px solid;
+}
+
+.album-thumb {
+    width: 100%;
+}
+
+.search-res {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 300px;
+    transition: 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.search-res:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.search-res > h5 {
+    padding: 5px;
+}
+
+.search-bar {
+    margin: 10px 0;
+    height: 30px;
+    width: 220px;
+    margin-right: 10px;
+}
+
+.sign-in {
+    margin: 5px 0;
+    width: 100px;
+    background: #db3236;
+    color: #fff;
+
+}
+
+.side-bar {
+    float: right;
+}
+
+.filter {
+    float: left;
+
+}
+
+.button-section > button{
+    margin: 20px;
+    padding: 5px;
+    color: #fff;
+    display: block;
+    padding: 7px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-image: none;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+}
+
+.btn-watchlist {
+    background: #db3236;
+}
+
+.btn-thriller {
+    background: #2196F3;
+}
+
+.user-image-thumbnail {
+    margin: 4px 0px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.bigger-thumbnail {
+    margin: 4px 0px;
+    border-radius: 50%;
+    height: 70px;
+    width: 100px;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: -100%;
+    background-color: #fff;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content, .search-bar:active ~ .dropdown-content, .search-bar:focus ~ .dropdown-content {
+    display: block;
+}
+
+.dropdown-content > ul {
+    list-style: none;
+}
+
+.dropdown-content > ul > li {
+    cursor: pointer;
+
+}
+
+.dropdown-content > ul > li:hover {
+    color: red;
+}
+.display {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+}
+
+.pagination {
+    float: left;
+}
+
+.pagination > li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.pagination > li:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.search-result {
+    height: 200px;
+    overflow: scroll;
+}
+
+.movie-detail-image {
+  height: 340px;
+  width: 330px;
+}
+
+.similar-movie-image {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.similar-movies {
+  margin-top: 5%;
+}
+
+.subtitle{
+  color: rgba(16, 15, 21, 0.35);
+}
+
+.recommended-movies {
+  height: 230px;
+}
