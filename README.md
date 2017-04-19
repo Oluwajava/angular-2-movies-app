@@ -1,5 +1,5 @@
-[alt tag](https://github.com/Oluwajava/angular-2-movies-app/blob/master/1.PNG)
-[alt tag](https://github.com/Oluwajava/angular-2-movies-app/blob/master/2.PNG)
+![alt tag](https://github.com/Oluwajava/angular-2-movies-app/blob/master/1.PNG)
+![Alt text](https://github.com/Oluwajava/angular-2-movies-app/blob/master/2.PNG)
 
 # Movies
 
