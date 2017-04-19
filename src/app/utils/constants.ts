@@ -1,6 +1,6 @@
 export class Constants {
 
-    public static API_KEY = "?api_key=8b33f5b57c1964517ae7a3229bedbf88";
+    public static API_KEY = "?api_key=YOUR_API_KEY";
     public static BASE_URL_MOVIE = "http://api.themoviedb.org/3/movie";
     public static BASE_URL_TVSHOW = "http://api.themoviedb.org/3/tv";
     public static IMAGE_BASE_URL = "http://image.tmdb.org/t/p/w185/";
